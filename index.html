@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Translation App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <img class="avatar" src="./logo/Aavaaz.jpg" alt="Image">
+    </div>
+
+    <div class="container">
+        <h1 style="color: white;">⚫ Welcome to aavaaz.ai</h1>
+        <textarea id="userText" placeholder="Enter text to translate"></textarea>
+
+        <!-- Dropdown menu for language selection -->
+        <select id="languageDropdown" class="language-dropdown">
+            <option value="" selected disabled>Select Language</option>
+            <option value="hi">Hindi</option>
+            <option value="pl">Polish</option>
+            <option value="fr">French</option>
+            <option value="zh">Chinese</option>
+            <option value="de">German</option>
+            <option value="ar">Arabic</option>
+            <option value="tl">Tamil</option>
+            <option value="jap">Japanese</option>
+        </select>
+
+        <button onclick="translateText()"
+            style="width: 50%;justify-content: center;margin-left: 12vw;">Translate</button>
+        <div id="translatedText" style="color: white;"></div>
+
+        <!--
+        <div id="feedbackDiv" class="feedbackButtons" >
+            <button id="rightBtn" onclick="handleFeedback('right')" style="margin-left:3vw">✅ Right</button>
+            <button id="wrongBtn" onclick="handleFeedback('wrong')" style="margin-left:1vw">❌ Wrong</button>
+        </div>
+
+       
+        <div id="smileyDiv" class="feedbackRight" style="visibility:hidden">
+            <div class="smiley">😊</div>
+        </div>
+
+        
+        <div id="wrongFeedback" class="feedbackWrong" style="visibility:hidden">
+            <div class="sentence"  style="color: white;">Which part you find wrong ?</div>
+            <div id="word-buttons" class="word-buttons">a</div>
+            <textarea id="userText" placeholder="Enter your correction"></textarea>
+            <button id="submitCorrectionBtn" onclick="submitCorrection()">Submit Correction</button>
+        </div>
+        -->
+    </div>
+
+    <!-- Div for feedback -->
+
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>
